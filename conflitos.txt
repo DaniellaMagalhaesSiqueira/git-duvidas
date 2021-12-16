@@ -1,0 +1,7 @@
+git checkout main
+git pull
+git checkout branch-do-conflito
+git merge main
+git add .
+git commit -m "descreva o que fez"
+git push origin branch-do-conflito
