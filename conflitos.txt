@@ -1,7 +1,12 @@
+//trocando para a branch main
 git checkout main
+//enviando modificações para o repositório remoto
 git pull
+//mudando para a branch que criou para o conflito
 git checkout branch-do-conflito
+//enviando as informações para a branch main
 git merge main
+//adicionando os arquivos
 git add .
 git commit -m "descreva o que fez"
 git push origin branch-do-conflito
