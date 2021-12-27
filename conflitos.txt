@@ -10,3 +10,7 @@ git merge main
 git add .
 git commit -m "descreva o que fez"
 git push origin branch-do-conflito
+
+Nota: devido ao efeito "destrutivo" de um comando git reset --hard (ele redefine o índice e a árvore de trabalho. Quaisquer mudanças nos arquivos rastreados na árvore de trabalho desde <commit> são descartadas), prefiro ir com:
+
+$ git reset --soft HEAD~3  # (2)
